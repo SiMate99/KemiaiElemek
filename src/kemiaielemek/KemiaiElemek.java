@@ -26,6 +26,13 @@ public class KemiaiElemek {
             db++;
         }
         System.out.println("Elemek száma: " + db);
+        /*4.feladat*/
+        System.out.println("4.feladat:");
+        for (Felfedezes felfedezes : Felfedezesek) {
+            if (felfedezes.getEv().equals("Ókor")) {
+                System.out.println(felfedezes);
+            }
+        }
         /*8.feladat*/
         System.out.println("8.feladat");
         HashMap<String, Integer> elemekFelf = new HashMap<>();

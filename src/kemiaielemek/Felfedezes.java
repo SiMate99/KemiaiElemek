@@ -37,5 +37,11 @@ public class Felfedezes {
     public String getFelfedezo() {
         return felfedezo;
     }
+
+    @Override
+    public String toString() {
+        return "Felfedezes{" + "ev=" + ev + ", elem=" + elem + ", vegyjel=" + vegyjel + ", rendszam=" + rendszam + ", felfedezo=" + felfedezo + '}';
+    }
+    
     
 }

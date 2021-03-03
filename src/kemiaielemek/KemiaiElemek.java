@@ -27,12 +27,27 @@ public class KemiaiElemek {
         System.out.println("Elemek száma: " + db);
         /*4.feladat*/
         System.out.println("4.feladat:");
+        int okoriFelfedezesek = 0;
         for (Felfedezes felfedezes : Felfedezesek) {
             if (felfedezes.getEv().equals("Ókor")) {
-                System.out.println(felfedezes);
+                okoriFelfedezesek ++;
             }
         }
+        System.out.println("Felfedezések számaz az Ókorban: " + okoriFelfedezesek);
+        /*7.feladat*/
+        System.out.println("7.feladat:");
+        int kulombseg  = 0;
+        for (int i = 0; i < Felfedezesek.size()-1; i++) {
+            if (!Felfedezesek.get(i).getEv().equals("Ókor")) {
+                if (kulombseg < Integer.parseInt(Felfedezesek.get(i+1).getEv()) - Integer.parseInt(Felfedezesek.get(i).getEv())) {
+                    kulombseg = Integer.parseInt(Felfedezesek.get(i+1).getEv()) - Integer.parseInt(Felfedezesek.get(i).getEv());
+                }
+            }
+        }
+        System.out.println(kulombseg +" volt a legtöbb év között");
         /*8.feladat*/
+        
+        
         System.out.println("8.feladat");
         HashMap<String, Integer> elemekFelf = new HashMap<>();
 

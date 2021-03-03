@@ -11,9 +11,12 @@ public class KemiaiElemek {
     public static void main(String[] args) throws IOException {
         List<String> sorok = Files.readAllLines(Paths.get("felfedezesek.csv"));
         ArrayList<Felfedezes> Felfedezesek = new ArrayList<>();
-        for (String sor : sorok) {
+        for (int i = 1; i < sorok.size(); i++) {
+            String sor = sorok.get(i);
             Felfedezesek.add(new Felfedezes(sor));
         }
+        
+        
     }
     
 }

@@ -27,13 +27,14 @@ public class KemiaiElemek {
         }
         System.out.println("Elemek száma: " + db);
         /*4.feladat*/
-        System.out.println("4.feladat:");
+        System.out.print("4.feladat:");
         int okoriFelfedezesek = 0;
         for (Felfedezes felfedezes : Felfedezesek) {
             if (felfedezes.getEv().equals("Ókor")) {
                 okoriFelfedezesek++;
             }
         }
+        System.out.println("Felfedezések számaz az Ókorban: " + okoriFelfedezesek);
         /*5.Feladat*/
         Scanner sc = new Scanner(System.in);
         boolean vegyjelE = false;
@@ -70,8 +71,6 @@ public class KemiaiElemek {
                     + "\n\tFelfedezés éve: " + sor.getEv()
                     + "\n\tFelfedező: " + sor.getFelfedezo());
         }
-
-        System.out.println("Felfedezések számaz az Ókorban: " + okoriFelfedezesek);
         /*7.feladat*/
         System.out.println("7.feladat:");
         int kulombseg = 0;
